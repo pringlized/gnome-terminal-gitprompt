@@ -8,6 +8,7 @@ get_service_icon() {
             [docker]="\ue7b0"
             [postgresql]='\ue76e'
             [mariadb]='\ue704'
+            [mysqld]='\ue704'
         )
         echo ${icons[$service]}
     fi
@@ -46,7 +47,7 @@ load_services() {
     local right_block="\ue0b0" #\ue0b0   
     local reset="\001\033[0m\002"
     local services_prompt=''
-    declare -a services=("docker" "postgresql" "mysql")
+    declare -a services=("docker" "postgresql" "mariadb" "mysqld")
 
     # determine background based on load
     local load="$(check_load)"

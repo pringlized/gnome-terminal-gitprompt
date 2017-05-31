@@ -2,7 +2,7 @@
 Customized gnome-terminal prompt with git insight
 
 ### Sections
-- services: background reflects loads. currently hardcoded icons for docker, postgresql & mysql
+- services: background reflects loads.
 - user@host
 - path
 - git info
@@ -18,6 +18,15 @@ Customized gnome-terminal prompt with git insight
 
 ###### Prompt including git. Inspired by and most code from [oh-my git](https://github.com/arialdomartini/oh-my-git/blob/master/README.md)
 ![alt text](images/with_git.png "Base prompt")
+
+##### As root user.  Simple: no services, load indication or git info
+![alt text](images/root_user.png "Root user")
+
+### Available services:
+- docker
+- postgresql
+- mysqld
+- mariadb
 
 ### Todo:
 - make services more dynamic so they can easily added/removed
